@@ -1,5 +1,4 @@
-# InFiniDesk Management
-For online businesses who has to deal with customers that demand instant responses from support, InFiniDesk is a chat-based help desk software that provides customer service experience that is identical to instant-messaging based customer support (e.g., via chat groups in WhatsApp, WeChat, Telegram, etc). Unlike most help desk software in the market (e.g., Zendesk, Intercom, Tawk.to, etc), InFiniDesk does not require the customers to own an email address to get support.
+# Infinidesk Android Sdk
 
 ## Getting started
 A new Android project with empty activity theme will be created to display the steps of SDK integration.
