@@ -1,3 +1,12 @@
+
+<p align="left">
+  <a href="https://desk.infinacle.com/">
+    <img alt="infinidesk" src="https://infinacle.com/wp-content/uploads/2018/10/footer_logo_100x100.png" width="150">
+  </a>
+</p>
+
+Streamline your customer experience with scalable real-time chat
+
 # Infinidesk Android Sdk
 
 ## Getting started
