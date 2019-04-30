@@ -67,8 +67,8 @@ This app will need to pass in 5 string values to generate a token in order to pr
 - ```idReference``` You may pass in visitor email or a GUID. The value that sets here must be unique.<br />
 - ```idReferenceType``` You may pass in visitor type, Example. **guest**<br />
 - ```apiKey``` You can obtain your API key from Infinacle Chat Dashboard.<br />
-- ```name``` You may pass in visitor name<br /> 
-- ```email``` You may pass in visitor email<br /><br /> 
+- ```name``` You may pass in visitor name.<br /> 
+- ```email``` You may pass in visitor email.<br /><br /> 
     Sample:<br />
     Below is the code to generate a unique GUID. This unique code will then be set as the idReference.
 ```java
