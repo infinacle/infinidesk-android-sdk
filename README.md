@@ -63,7 +63,7 @@ openButton.setOnClickListener(v ->
 ```
 
 9. Open up the ```MainActivity.java``` file and follow the guide below:<br />
-This app will need to pass in 7 string values to generate a token in order to proceed to websocket request.
+This app will need to pass in 5 string values to generate a token in order to proceed to websocket request.
 - ```idReference``` You may pass in visitor email or a GUID. The value that sets here must be unique.<br />
 - ```idReferenceType``` You may pass in visitor type, Example. **guest**<br />
 - ```apiKey``` You can obtain your API key from Infinacle Chat Dashboard.<br />
