@@ -61,35 +61,13 @@ android.enableJetifier = true
   
 ## Start the Sdk
 
-9. Open up the ```MainActivity.java``` file and follow the guide below:<br />
-This app will need to pass in 5 string values to generate a token in order to proceed to websocket request.
+1. This app will need to pass in 5 string values to generate a token in order to proceed to websocket request.
 - ```idReference``` You may pass in visitor email or a GUID. The value that sets here must be unique.<br />
 - ```idReferenceType``` You may pass in visitor type, Example. **guest**<br />
 - ```apiKey``` You can obtain your API key from Infinacle Chat Dashboard.<br />
 - ```name``` You may pass in visitor name.<br /> 
-- ```email``` You may pass in visitor email.<br /><br /> 
-    Sample:<br />
-    Below is the code to generate a unique GUID. This unique code will then be set as the idReference.
-```java
-public synchronized static String createIdReference(Context context) {
-  if (idReference == null) {
-    SharedPreferences sharedPrefs = context.getSharedPreferences(PREF_UNIQUE_ID, Context.MODE_PRIVATE);
-    idReference = sharedPrefs.getString(PREF_UNIQUE_ID, null);
-    if (idReference == null) {
-      idReference = UUID.randomUUID().toString();
-      SharedPreferences.Editor editor = sharedPrefs.edit();
-      editor.putString(PREF_UNIQUE_ID, idReference);
-      editor.commit();
-    }
-  }
-  return idReference;
-}
-```
-  Sample:<br />
-  Add the line of code below to set the reference ID inside onCreate() method.
-```java
-idReference = createIdReference(this);
-```
+- ```email``` You may pass in visitor email.<br /><br />   
+
   Below is the function to run and open the Infinacle chat application:
 ```java 
 InfiniHelpDeskIntent infiniDesk = new InfiniHelpDeskIntent();
