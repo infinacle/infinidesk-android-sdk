@@ -5,15 +5,10 @@
   </a>
 </p>
 
-Streamline your customer experience with scalable real-time chat
+Streamline your customer experience with scalable real-time chat. The app enables users to send **text** and **multimedia messages like audio, video, images, documents.**
 
-# Infinidesk Android Sdk
-#### Getting started
-
-## Table of Contents
-1. [Add the InfinacleChat Dependency ](#Add-Dependency)
-2. [Migrate Current to AndroidX ](#Migrate-Current)
-3. [Start the Sdk ](#Start-Sdk)
+# Infinacle Chat Android SDK Documentation
+#### Getting started 
 
 ## Add the InfinacleChat Dependency
 
@@ -71,11 +66,11 @@ android.enableJetifier = true
   Below is the function to run and open the Infinacle chat application:
 ```java 
 InfiniHelpDeskIntent infiniDesk = new InfiniHelpDeskIntent();
-infiniDesk.setIdRef(idReference);
-infiniDesk.setIdRefType(idReferenceType);
-infiniDesk.setApiKey(apiKey);
-infiniDesk.setName(name);
-infiniDesk.setEmail(email);
+infiniDesk.setIdRef("XXXXXXXXX");
+infiniDesk.setIdRefType("guest");
+infiniDesk.setApiKey("XXXXXXXXX");
+infiniDesk.setName("XXXXXXXXX");
+infiniDesk.setEmail("XXXXXXXXX");
 
 i = InfiniHelpDesk.getInstance().startChat(infiniDesk, this);
 startActivityForResult(i, 1);
