@@ -78,10 +78,12 @@ android{
 3. Open **app level** ```AndroidManifest.xml``` file, add the following code in the ```application``` section. 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapp">
     <application
             android:name=".MyApplication"
-            tools:replace="android:name">
+            tools:replace="android:name"
+            ...  >
         ...
     </application>
 </manifest> 
@@ -89,6 +91,12 @@ android{
 
 4. Create new file ```MyApplication.java``` in **app level**, add the following code. 
 ```java
+package com.example.myapp;
+
+import android.content.Context;
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
+
 public class MyApplication extends MultiDexApplication {
     @Override
     protected void attachBaseContext(Context base) {
