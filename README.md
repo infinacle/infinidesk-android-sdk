@@ -126,6 +126,17 @@ infiniDesk.setName("XXXXXXXXX");
 infiniDesk.setEmail("XXXXXXXXX");
 infiniDesk.setLang("XXXXXXXXX");
 
-i = InfiniHelpDesk.getInstance().startChat(infiniDesk, this);
-startActivityForResult(i, 1);
+Intent intent = InfiniHelpDesk.getInstance().startChat(infiniDesk, {activity name}.this);
+startActivityForResult(intent, 1);
+```
+
+2. Add the following code for import purpose.
+```java 
+package com.example.myapp;
+
+import com.infinihelpdesk.utils.InfiniHelpDesk;
+import com.infinihelpdesk.utils.InfiniHelpDeskIntent;
+
+...
+
 ```
