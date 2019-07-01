@@ -39,7 +39,7 @@ android{
 ```java
 dependencies { 
   ...
-  implementation 'com.infinihelpdesk:InfiniHelpDesk:1.0.2'
+  implementation 'com.infinihelpdesk:InfiniHelpDesk:1.0.3'
 }
 ```
 ## Migrate Current to AndroidX
@@ -79,7 +79,8 @@ android{
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapp">
+    package="com.example.myapp"> 
+    ...
     <application
             android:name=".MyApplication"
             tools:replace="android:name"
@@ -108,13 +109,14 @@ public class MyApplication extends MultiDexApplication {
 
 ## Start the Sdk
 
-1. This app will need to pass in 5 string values to generate a token in order to proceed to websocket request.
+1. This app will need to pass in 7 string values to generate a token in order to proceed to websocket request.
 - ```idReference``` You may pass in visitor email or a GUID. The value that sets here must be unique.<br />
 - ```idReferenceType``` You may pass in visitor type, Example. **guest**<br />
 - ```apiKey``` You can obtain your API key from Infinacle Chat Dashboard.<br />
 - ```name``` You may pass in visitor name.<br /> 
 - ```email``` You may pass in visitor email.<br />
-- ```language``` You may pass in language, Example. **en-US** or **zh-CN**.<br /><br />   
+- ```language``` You may pass in language, Example. **en-US**.<br /><br />  
+- ```environment``` You may pass in environment, Example. **UAT** or **PROD**.<br /><br />    
 
   Below is the function to run and open the Infinacle chat application:
 ```java 
@@ -125,6 +127,7 @@ infiniDesk.setApiKey("XXXXXXXXX");
 infiniDesk.setName("XXXXXXXXX");
 infiniDesk.setEmail("XXXXXXXXX");
 infiniDesk.setLang("XXXXXXXXX");
+infiniDesk.setEnv("XXXXXXXXX");
 
 Intent intent = InfiniHelpDesk.getInstance().startChat(infiniDesk, {activity name}.this);
 startActivityForResult(intent, 1);
