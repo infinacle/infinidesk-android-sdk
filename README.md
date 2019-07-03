@@ -115,7 +115,7 @@ public class MyApplication extends MultiDexApplication {
 - ```apiKey``` You can obtain your API key from Infinacle Chat Dashboard.<br />
 - ```name``` You may pass in visitor name.<br /> 
 - ```email``` You may pass in visitor email.<br />
-- ```language``` You may pass in language, Example. **en-US**.<br /><br />  
+- ```language``` You may pass in language, Example. **en-US**.<br /> 
 - ```environment``` You may pass in environment, Example. **UAT** or **PROD**.<br /><br />    
 
   Below is the function to run and open the Infinacle chat application:
